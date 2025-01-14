@@ -81,3 +81,171 @@ nav {
     letter-spacing: 0%;
     text-align: left;
 }
+
+.clients {
+    padding: 8rem 15rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.clients>img {
+    width: 754.39px;
+    height: 384.76px;
+}
+
+
+.clientsImages img {
+    width: 150px;
+    margin: 2rem;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testicontainer {
+    padding: 8rem 15rem 2rem;
+    display: flex;
+    gap: 5rem;
+}
+
+.card {
+    background-color: #052357;
+    border-radius: 40px;
+    color: #FEF3F3;
+    font-size: 21.28px;
+    padding: 3rem 2rem;
+}
+
+.cardUpper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card>p {
+    margin-bottom: 5rem;
+}
+
+.cardLower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardLowerright {
+    margin: 0 auto;
+}
+
+.testibtns {
+    margin-bottom: 5rem;
+}
+
+.testibtns>i {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icon {
+    color: #0a3279;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: #466c96;
+}
+
+/* Videos Section */
+
+.videos {
+    padding: 8rem 15rem 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.videocontainer iframe {
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.tech {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 22rem 8rem;
+}
+
+.lefttech p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.tech img {
+    height: 384.76px;
+    width: 754.39px;
+}
+
+footer {
+    background: rgb(186, 202, 218);
+    /* padding: 8rem 15rem 8rem; */
+    padding: 3rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(5, 35, 87);
+}
+
+.leftFooter h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.leftFooter p {
+    color: rgb(5, 35, 87);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+.footericon{
+    color: rgb(5, 35, 87);
+    margin-right: 10px;
+}
+
+.rightFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.rightFooter h1{
+    color: rgb(5, 35, 87);
+    font-size: 25px;
+}
+
+
+.rightFooter button{
+    background-color: rgb(5, 35, 87);
+    color: white;
+    font-size: 15px;
+    padding: 17px 25px;
+    border-radius: 20px;
+}
