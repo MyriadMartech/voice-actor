@@ -10,20 +10,15 @@
 nav {
     background-color: #BACADA;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10rem;
 }
 
 .navsides {
     display: flex;
+    flex-wrap: wrap;
 }
-
-/* .leftNav{
-    background-color: pink;
-}
-.rightNav{
-    background-color: yellow;
-} */
 
 .rightNav img {
     margin: 10px;
@@ -69,7 +64,8 @@ nav {
 }
 
 .aboutRich>img {
-    width: 661px;
+    width: 60vw;
+    height: max-content;
 }
 
 .aboutRichR p {
@@ -85,6 +81,7 @@ nav {
 .clients {
     padding: 8rem 15rem;
     display: flex;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -247,4 +244,42 @@ footer {
     font-size: 15px;
     padding: 17px 25px;
     border-radius: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1900px) {
+    .aboutRich{
+        flex-direction: column;
+    }
+    .aboutRich>img {
+        margin: 0 auto;
+    }
+    .aboutRichR p{
+        text-align:justify;
+    }
+}
+
+@media (max-width: 1680px) {
+
+    .clients {
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .clientsImages{
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    nav {
+        padding: 0 8rem;
+    }
+    .devider h1 {
+        font-size: 25px;
+    }
 }
