@@ -71,7 +71,7 @@ nav {
 .aboutRichR p {
     color: rgb(0, 0, 0);
     font-family: Inter;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0%;
@@ -90,6 +90,12 @@ nav {
     height: 384.76px;
 }
 
+.clientsImages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
 
 .clientsImages img {
     width: 150px;
@@ -214,7 +220,7 @@ footer {
 .leftFooter p {
     color: rgb(5, 35, 87);
     font-family: Inter;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 70px;
 }
@@ -249,18 +255,36 @@ footer {
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 1900px) {
-    .aboutRich{
-        flex-direction: column;
+    
+
+    .aboutRich, .videos,  .tech{
+        padding: 8rem 10rem;
     }
+
+    .testicontainer {
+        padding: 8rem 10rem 2rem;
+    }
+
     .aboutRich>img {
         margin: 0 auto;
     }
     .aboutRichR p{
         text-align:justify;
     }
+
+    .aboutRich>img {
+        width: 40vw;
+        height: max-content;
+    }
 }
 
 @media (max-width: 1680px) {
+
+    
+    .aboutRich{
+        flex-direction: column;
+        justify-content:  center;
+    }
 
     .clients {
         flex-direction: column;
@@ -272,14 +296,23 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+
+    .tech {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
 }
 
 @media (max-width: 1200px) {
-    
+    .clients>img , .tech img {
+        width: 754.39px;
+        height: 384.76px;
+    }
     nav {
         padding: 0 8rem;
     }
     .devider h1 {
         font-size: 25px;
     }
+
 }
