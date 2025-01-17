@@ -188,6 +188,9 @@ nav {
     justify-content: center;
     gap: 2rem; 
 }
+.mobilevideoarrow{
+    display: none;
+}
 
 .fa-solid {
     text-align: center;
@@ -380,17 +383,14 @@ footer {
         column-gap: 2rem;
     }
 
-    nav {
-        align-items: center;
-        justify-content: center;
-    }
+    
 
     .aboutRich{
         padding: 5rem 4rem;
     }
 
     .videos{
-        padding: 5rem 2rem;
+        padding: 3rem 2rem;
     }
 
     .tech {
@@ -411,4 +411,39 @@ footer {
     .devider h1 {
         font-size: 20px;
     }
+}
+
+@media (max-width: 600px) {
+    nav > ul > li{
+        width: 270px;
+        text-align: center;
+    }
+
+    .rightNav img {
+        margin: 10px auto;
+    }
+
+    .clientsImages img {
+        width: 100px;
+        margin: 0.2rem;
+    }
+
+    .videos {
+        display: flex;
+    }
+
+    .videos i{
+        display: none;
+    }
+    .mobilevideoarrow{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .lefttech p {
+        font-size: 17px;
+    }
+
 }
