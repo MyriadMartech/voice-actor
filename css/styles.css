@@ -87,7 +87,7 @@ nav {
 }
 
 .clients>img {
-    min-width: 450px;
+
     width: 100%;
 }
 
@@ -170,6 +170,7 @@ nav {
 .icon {
     color: #0a3279;
     transition: color 0.3s ease;
+    order: 0;
 }
 
 .icon:hover {
@@ -317,14 +318,14 @@ footer {
 }
 
 @media (max-width: 1400px) {
-    .videocontainer {
+    /* .videocontainer {
         display: grid; 
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: auto auto; 
         row-gap: 3rem;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     #video2{
         display: none;
@@ -371,8 +372,43 @@ footer {
     .card3{
         display: none;
     }
+    .clients {
+        padding: 5rem 7rem;
+    }
     .clientsImages {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutRich{
+        padding: 5rem 4rem;
+    }
+
+    .videos{
+        padding: 5rem 2rem;
+    }
+
+    .tech {
+        padding: 5rem 2rem;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        line-height: 4rem;
+        gap: 1.2rem;
+        justify-content: center;
+    }
+
+    .rightFooter {
+        gap: 0;
+    }
+
+    .devider h1 {
+        font-size: 20px;
     }
 }
