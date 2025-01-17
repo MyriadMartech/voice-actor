@@ -12,14 +12,14 @@
 <body>
     <nav>
         <ul class="leftNav navsides">
-            <li><a href=""><i class="fas fa-phone"></i> 81-90-2918-9359</a></li>
-            <li><a href=""> <i class="fa-solid fa-envelope"></i> ichard@RichardCrackerVA.com</a></li>
+            <li><a href="https://wa.me/819029189359"><i class="fas fa-phone"></i> 81-90-2918-9359</a></li>
+            <li><a href="mailto:ichard@RichardCrackerVA.com"> <i class="fa-solid fa-envelope"></i> ichard@RichardCrackerVA.com</a></li>
         </ul>
 
         <ul class="rightNav navsides">
-            <li><a href="">Schedule A Call With Richard</a></li>
+            <li><a href="" data-key="schedule">Schedule A Call With Richard</a></li>
 
-            <img src="assets/images/japanflag.png" alt="" width="20px">
+            <img id="toggle-lang" src="assets/images/japanflag.png" alt="" width="20px">
         </ul>
     </nav>
 
@@ -28,20 +28,20 @@
     </section>
 
     <div class="devider">
-        <h1>RICHARD OFFERS A RELAXED GENTLE TENOR WITH EXCELLENT WARM LOW-END SUPPORT.</h1>
+        <h1 data-key="aboutRichdevider">RICHARD OFFERS A RELAXED GENTLE TENOR WITH EXCELLENT WARM LOW-END SUPPORT.</h1>
     </div>
 
     <section class="aboutRich">
         <img src="./assets/images/profilephoto.jpeg" alt="">
         <div class="aboutRichR">
-            <p>Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His transpacific mindset makes
+            <p data-key="aboutRichPara1">Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His transpacific mindset makes
                 Rich a sought-after voice for Japanese public service announcements, university projects, corporate
                 narrations, web presentations, and e-learning tutorials.</p><br>
 
-            <p>Rich has lent his distinct voice to such prestigous projects as MEXT, Woven Industries, Waseda
+            <p data-key="aboutRichPara2">Rich has lent his distinct voice to such prestigous projects as MEXT, Woven Industries, Waseda
                 University, Cyberdyn Sytems, Q-Games and many more.</p><br>
 
-            <p>Rich’s warm, relatable, and authentic tenor captivates listeners with a versitile performance style that
+            <p data-key="aboutRichPara3">Rich’s warm, relatable, and authentic tenor captivates listeners with a versitile performance style that
                 effortlessly ranges from light-hearted charm to trusted authority. This unique ability to connect with
                 listeners stems from Rich’s 30+ years as a university teacher and weekend saxophonist in jazz and rock
                 bands across Tokyo. Rich approaches every project with creativity, expertise, and an unwavering
@@ -74,14 +74,14 @@
         <div class="testicontainer">
             <div class="card card1">
                 <div class="cardUpper">
-                    <img src="./assets/images/Prof. Denis.png" alt="">
+                    <img src="./assets/images/Mr. Miguel.png" alt="">
                     <div class="cardUpperRight">
                         <p>Omar Farooq1</p>
                         <p>Financial Analyst</p>
                     </div>
                 </div>
                 <hr>
-                <p>"A fantastic real estate service! They were always available to answer our questions and provided invaluable guidance. We couldn't be happier."</p>
+                <p>"“Bary do a great job to find the perfect home. It's very easy for every one to buy, sell or rent property we belive they continure their great service.”"</p>
                 <div class="cardLower">
                     <div class="cardLowerleft">
                         <p>Forest Glen</p>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <hr>
-                <p>"A fantastic real estate service! They were always available to answer our questions and provided invaluable guidance. We couldn't be happier."</p>
+                <p>"“A fantastic real estate service! They were always available to answer our questions and provided invaluable guidance. We couldn't be happier.”"</p>
                 <div class="cardLower">
                     <div class="cardLowerleft">
                         <p>Forest Glen</p>
@@ -122,14 +122,14 @@
             </div>
             <div class="card card3">
                 <div class="cardUpper">
-                    <img src="./assets/images/Prof. Denis.png" alt="">
+                    <img src="./assets/images/Roman Cruikshank.png" alt="">
                     <div class="cardUpperRight">
                         <p>Omar Farooq3</p>
                         <p>Financial Analyst</p>
                     </div>
                 </div>
                 <hr>
-                <p>"A fantastic real estate service! They were always available to answer our questions and provided invaluable guidance. We couldn't be happier."</p>
+                <p>“Bary do a great job to find the perfect home. It's very easy for every one to buy, sell or rent property we belive they continure their great service.”</p>
                 <div class="cardLower">
                     <div class="cardLowerleft">
                         <p>Forest Glen</p>
@@ -192,7 +192,7 @@
   
   <footer>
     <div class="leftFooter">
-        <h1>Contact</h1>
+        <h1 data-key="contact">Contact</h1>
         <p>Email: Richard@RichardCrackerVC.com</p>
         <a href=""><i class="fa-brands fa-facebook fa-2x footericon"></i></a>
         <a href=""><i class="fa-brands fa-twitter fa-2x footericon"></i></a>
@@ -200,10 +200,13 @@
         <a href=""><i class="fa-brands fa-github fa-2x footericon"></i></a>
     </div>
     <div class="rightFooter">
-        <h1>Schedule Call With Rich</h1>
+        <h1 data-key="schedule">Schedule Call With Rich</h1>
         <button>Book Appoinment</button>
     </div>
   </footer>
+
+
+  <script src="./js/script.js"></script>
 
 </body>
 
