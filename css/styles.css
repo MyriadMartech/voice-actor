@@ -75,7 +75,6 @@ nav {
     font-size: 20px;
     font-weight: 400;
     line-height: 29px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
@@ -91,7 +90,7 @@ nav {
     width: 100%;
 }
 
-.clientsImages{
+.clientsImages {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -154,7 +153,7 @@ nav {
     align-items: center;
 }
 
-.cardLowerright i{
+.cardLowerright i {
     margin: 0 5px;
 }
 
@@ -183,12 +182,13 @@ nav {
 .videos {
     padding: 8rem 15rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
     justify-content: center;
-    gap: 2rem; 
+    gap: 2rem;
 }
-.mobilevideoarrow{
+
+.mobilevideoarrow {
     display: none;
 }
 
@@ -198,7 +198,7 @@ nav {
 }
 
 .videocontainer {
-    display: flex; 
+    display: flex;
     gap: 1rem;
     justify-content: center;
 }
@@ -206,6 +206,7 @@ nav {
 .videocontainer iframe {
     border-radius: 10px;
 }
+
 .tech {
     display: flex;
     justify-content: space-between;
@@ -219,10 +220,10 @@ nav {
     line-height: 50px;
 }
 
-.tech img {
+/* .tech img {
     min-width: 450px;   
     height: auto; 
-}
+} */
 
 footer {
     background: rgb(186, 202, 218);
@@ -246,12 +247,12 @@ footer {
     line-height: 30px;
 }
 
-.footericon{
+.footericon {
     color: rgb(5, 35, 87);
     margin-right: 10px;
 }
 
-.rightFooter{
+.rightFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,13 +260,13 @@ footer {
     gap: 1rem;
 }
 
-.rightFooter h1{
+.rightFooter h1 {
     color: rgb(5, 35, 87);
     font-size: 25px;
 }
 
 
-.rightFooter button{
+.rightFooter button {
     background-color: rgb(5, 35, 87);
     color: white;
     font-size: 15px;
@@ -276,9 +277,11 @@ footer {
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 1900px) {
-    
 
-    .aboutRich, .videos,  .tech{
+
+    .aboutRich,
+    .videos,
+    .tech {
         padding: 8rem 10rem;
     }
 
@@ -290,8 +293,11 @@ footer {
         width: 100%;
         margin: 0 auto;
     }
-    .aboutRichR p{
-        text-align:justify;
+
+    .aboutRichR p {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 20px;
     }
 
     .aboutRich>img {
@@ -302,15 +308,15 @@ footer {
 
 @media (max-width: 1680px) {
 
-    
-    .aboutRich{
+
+    .aboutRich {
         flex-direction: column;
-        justify-content:  center;
+        justify-content: center;
     }
 
     .clients {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
 
@@ -330,7 +336,7 @@ footer {
         align-items: center;
     } */
 
-    #video2{
+    #video2 {
         display: none;
     }
 
@@ -338,58 +344,75 @@ footer {
         gap: 2rem;
     }
 }
+
 @media (max-width: 1200px) {
-    .clients>img , .tech>img {
+
+    .clients>img,
+    .tech>img {
         width: 100%;
     }
+
     nav {
         padding: 0 7rem;
     }
-    
+
     .devider h1 {
         font-size: 25px;
     }
 
-    .card2{
+    .card2 {
         display: none;
     }
 
     .videocontainer {
         row-gap: 1rem;
     }
-    .dltvideo:nth-child(2){
+
+    .dltvideo:nth-child(2) {
         display: none;
     }
-    .card{
+
+    .card {
         padding: 2rem 1rem;
     }
+
     footer {
         padding: 3rem 7rem;
     }
 }
 
 @media (max-width: 992px) {
-    .dltvideo{
+
+    nav{
+        justify-content: center;
+        align-items: center;
+    }
+    .navsides {
+        justify-content: center;
+        align-items: center;
+    }
+    .dltvideo {
         display: none;
     }
-    .card3{
+
+    .card3 {
         display: none;
     }
+
     .clients {
         padding: 5rem 7rem;
     }
+
     .clientsImages {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
 
-    
-
-    .aboutRich{
+    .aboutRich {
         padding: 5rem 4rem;
     }
 
-    .videos{
+    .videos {
         padding: 3rem 2rem;
     }
 
@@ -399,22 +422,32 @@ footer {
 
     footer {
         flex-wrap: wrap;
-        line-height: 4rem;
-        gap: 1.2rem;
+        gap: 3rem;
         justify-content: center;
     }
 
     .rightFooter {
+        text-align: center;
         gap: 0;
     }
 
     .devider h1 {
         font-size: 20px;
     }
+
+    .testibtns {
+        margin-bottom: 3rem;
+    }
 }
 
 @media (max-width: 600px) {
-    nav > ul > li{
+
+    nav {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    nav>ul>li {
         width: 270px;
         text-align: center;
     }
@@ -430,12 +463,27 @@ footer {
 
     .videos {
         display: flex;
+        padding: 3rem 1rem;
     }
 
-    .videos i{
+    .videos i {
         display: none;
     }
-    .mobilevideoarrow{
+
+    .videocontainer iframe {
+        width: 300px;
+
+    }
+
+    .clients {
+        padding: 5rem 1.5rem;
+    }
+
+    .tech {
+        padding: 4rem 1.5rem;
+    }
+
+    .mobilevideoarrow {
         display: flex;
         justify-content: center;
         gap: 2rem;
@@ -443,7 +491,23 @@ footer {
     }
 
     .lefttech p {
-        font-size: 17px;
+        font-size: 15px;
+    }
+
+    .testicontainer {
+        padding: 5rem 1rem 2rem;
+    }
+
+    footer {
+        padding: 3rem 1rem;
+    }
+
+    .leftFooter p {
+        font-size: 15px;
+    }
+
+    .rightFooter h1 {
+        font-size: 20px;
     }
 
 }
