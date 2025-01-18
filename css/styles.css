@@ -27,6 +27,18 @@ nav {
     cursor: pointer;
 }
 
+
+        /* MEETING SCHEDULER */
+.modal{
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 100%;
+}
+        /* MEETING SCHEDULER */
+
 .navsides li {
     list-style: none;
     background-color: #052357;
@@ -46,6 +58,18 @@ nav {
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
 
 /* THE AUDIO CONTAINER */
 
@@ -525,16 +549,6 @@ footer {
         margin-bottom: 5px;
     }
 
-    #appointment-popup {
-        width: 90%; /* Reduce width for smaller screens */
-        padding: 20px; /* Adjust padding */
-    }
-
-    #appointment-popup input,
-    #appointment-popup button {
-        font-size: 14px; /* Smaller font size for inputs and buttons */
-    }
-
     .audio-player-container {
         width: 350px;
         position: relative;
@@ -625,23 +639,7 @@ footer {
     .rightNav img {
         margin: 10px auto;
     }
-    #appointment-popup {
-        width: 95%; /* Maximize width on very small screens */
-        padding: 15px;
-    }
 
-    #appointment-popup h2 {
-        font-size: 18px; /* Adjust heading size */
-    }
-
-    #appointment-popup input,
-    #appointment-popup button {
-        font-size: 12px; /* Further reduce font size */
-    }
-
-    #appointment-popup button {
-        padding: 8px 10px; /* Adjust button padding */
-    }
     .banner img {
         min-width: 350px;
         margin-bottom: 3.5rem;

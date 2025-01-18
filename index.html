@@ -13,36 +13,30 @@
     <nav>
         <ul class="leftNav navsides">
             <li><a href="https://wa.me/819029189359"><i class="fas fa-phone"></i> 81-90-2918-9359</a></li>
-            <li><a href="mailto:ichard@RichardCrackerVA.com"> <i class="fa-solid fa-envelope"></i> ichard@RichardCrackerVA.com</a></li>
+            <li><a href="mailto:ichard@RichardCrackerVA.com"> <i class="fa-solid fa-envelope"></i>
+                    ichard@RichardCrackerVA.com</a></li>
         </ul>
 
         <ul class="rightNav navsides">
-            <li><a href="" data-key="schedule" id="appointment-btn">Schedule A Call With Richard</a></li>
+            <li><a href="" id="scheduleLink" data-key="schedule">Schedule A Call With Richard</a></li>
 
             <img id="toggle-lang" src="assets/images/japanflag.png" alt="" width="20px">
         </ul>
     </nav>
 
+<!-- MEETING SCHEDULER POPUP -->
 
-    <div id="appointment-form">
-        <form id="appointment-popup">
-            <h2>Book an Appointment</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<div class="modal" id="scheduleModal" style="display: none;">
+    <div class="meetings-iframe-container" data-src="https://meetings.hubspot.com/md-iftekhar-rahman?embed=true" style="width: 90vw;"></div>
 
-            <label for="contact">Contact Number:</label>
-            <input type="tel" id="contact" name="contact" required>
+    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+</div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+<!-- MEETING SCHEDULER POPUP -->
 
-            <label for="date">Date & Time:</label>
-            <input type="datetime-local" id="date" name="date" required>
 
-            <button type="submit">Submit</button>
-            <button type="button" id="close-btn">Cancel</button>
-        </form>
-    </div>
+
+      
 
     <section class="banner">
         <img width="70%" src="assets/images/RichardCaraker_logo_large.jpg" alt="BannerImage">
@@ -66,14 +60,17 @@
     <section class="aboutRich">
         <img src="./assets/images/profilephoto.jpeg" alt="">
         <div class="aboutRichR">
-            <p data-key="aboutRichPara1">Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His transpacific mindset makes
+            <p data-key="aboutRichPara1">Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His
+                transpacific mindset makes
                 Rich a sought-after voice for Japanese public service announcements, university projects, corporate
                 narrations, web presentations, and e-learning tutorials.</p><br>
 
-            <p data-key="aboutRichPara2">Rich has lent his distinct voice to such prestigous projects as MEXT, Woven Industries, Waseda
+            <p data-key="aboutRichPara2">Rich has lent his distinct voice to such prestigous projects as MEXT, Woven
+                Industries, Waseda
                 University, Cyberdyn Sytems, Q-Games and many more.</p><br>
 
-            <p data-key="aboutRichPara3">Rich’s warm, relatable, and authentic tenor captivates listeners with a versitile performance style that
+            <p data-key="aboutRichPara3">Rich’s warm, relatable, and authentic tenor captivates listeners with a
+                versitile performance style that
                 effortlessly ranges from light-hearted charm to trusted authority. This unique ability to connect with
                 listeners stems from Rich’s 30+ years as a university teacher and weekend saxophonist in jazz and rock
                 bands across Tokyo. Rich approaches every project with creativity, expertise, and an unwavering
@@ -88,13 +85,13 @@
     <section class="clients">
         <img src="./assets/images/Clients2.png" alt="">
         <div class="clientsImages">
-                <img src="./assets/images/mext.png" alt="">
-                <img src="./assets/images/cyberoyne.png" alt="">
-                <img src="./assets/images/waseda.png" alt="">
-                <!-- <br> -->
-                <img src="./assets/images/qgames.png" alt="">
-                <img src="./assets/images/wovenplanet.jpg" alt="">
-                <img src="./assets/images/JSPS.jpg" alt="">
+            <img src="./assets/images/mext.png" alt="">
+            <img src="./assets/images/cyberoyne.png" alt="">
+            <img src="./assets/images/waseda.png" alt="">
+            <!-- <br> -->
+            <img src="./assets/images/qgames.png" alt="">
+            <img src="./assets/images/wovenplanet.jpg" alt="">
+            <img src="./assets/images/JSPS.jpg" alt="">
         </div>
     </section>
 
@@ -113,7 +110,8 @@
                     </div>
                 </div>
                 <hr>
-                <p>"“Bary do a great job to find the perfect home. It's very easy for every one to buy, sell or rent property we belive they continure their great service.”"</p>
+                <p>"“Bary do a great job to find the perfect home. It's very easy for every one to buy, sell or rent
+                    property we belive they continure their great service.”"</p>
                 <div class="cardLower">
                     <div class="cardLowerleft">
                         <p>Forest Glen</p>
@@ -137,7 +135,8 @@
                     </div>
                 </div>
                 <hr>
-                <p>"“A fantastic real estate service! They were always available to answer our questions and provided invaluable guidance. We couldn't be happier.”"</p>
+                <p>"“A fantastic real estate service! They were always available to answer our questions and provided
+                    invaluable guidance. We couldn't be happier.”"</p>
                 <div class="cardLower">
                     <div class="cardLowerleft">
                         <p>Forest Glen</p>
@@ -161,7 +160,8 @@
                     </div>
                 </div>
                 <hr>
-                <p>“Bary do a great job to find the perfect home. It's very easy for every one to buy, sell or rent property we belive they continure their great service.”</p>
+                <p>“Bary do a great job to find the perfect home. It's very easy for every one to buy, sell or rent
+                    property we belive they continure their great service.”</p>
                 <div class="cardLower">
                     <div class="cardLowerleft">
                         <p>Forest Glen</p>
@@ -191,54 +191,65 @@
         <div class="videos">
             <i class="fa-solid fa-circle-arrow-left fa-3x icon"></i>
             <div class="videocontainer">
-                <iframe width="400" height="315" src="https://www.youtube.com/embed/fqZSGlCwgVA?si=x__mfqogcTqMC9hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-                <iframe class="dltvideo" id="video2" width="400" height="315" src="https://www.youtube.com/embed/fqZSGlCwgVA?si=x__mfqogcTqMC9hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/fqZSGlCwgVA?si=x__mfqogcTqMC9hc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <iframe class="dltvideo" width="400" height="315" src="https://www.youtube.com/embed/fqZSGlCwgVA?si=x__mfqogcTqMC9hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="dltvideo" id="video2" width="400" height="315"
+                    src="https://www.youtube.com/embed/fqZSGlCwgVA?si=x__mfqogcTqMC9hc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe class="dltvideo" width="400" height="315"
+                    src="https://www.youtube.com/embed/fqZSGlCwgVA?si=x__mfqogcTqMC9hc" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <i class="fa-solid fa-circle-arrow-right fa-3x icon"></i> 
+            <i class="fa-solid fa-circle-arrow-right fa-3x icon"></i>
         </div>
     </section>
     <div class="mobilevideoarrow">
         <i class="fa-solid fa-circle-arrow-left fa-3x icon"></i>
-        <i class="fa-solid fa-circle-arrow-right fa-3x icon"></i> 
+        <i class="fa-solid fa-circle-arrow-right fa-3x icon"></i>
     </div>
     <div class="devider">
         <h1>Tech Specs</h1>
     </div>
-    
-<!-- TECH SECTION -->
 
-  <section class="tech">
-    <div class="lefttech">
-      
-      <p><i class="fa-solid fa-mobile-screen-button fa-lg"></i> Audio Technica AT875R Microphone</p>
-      <p><i class="fa-solid fa-microphone fa-lg"></i> Focusrite Scarlette 3rd Gen Interface</p>
-      <p><i class="fa-solid fa-laptop fa-sm"></i> Mac Air Sequoia M2</p>
-      <p><i class="fa-solid fa-headphones fa-sm"></i> Audio Technica ATH-M40x Headphones</p>
-      <p><i class="fa-solid fa-ear-listen fa-sm"></i> Audacity</p>
-    </div>
-    <img src="./assets/images/TechSpecs1.png" alt="">
-  </section>
-  
-  <footer>
-    <div class="leftFooter">
-        <h1 data-key="contact">Contact</h1>
-        <p>Email: Richard@RichardCrackerVC.com</p>
-        <a href=""><i class="fa-brands fa-facebook fa-2x footericon"></i></a>
-        <a href=""><i class="fa-brands fa-twitter fa-2x footericon"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin fa-2x footericon"></i></a>
-        <a href=""><i class="fa-brands fa-github fa-2x footericon"></i></a>
-    </div>
-    <div class="rightFooter">
-        <h1 data-key="schedule">Schedule Call With Rich</h1>
-        <button id="appointment-btn">Book Appoinment</button>
-    </div>
-  </footer>
+    <!-- TECH SECTION -->
+
+    <section class="tech">
+        <div class="lefttech">
+
+            <p><i class="fa-solid fa-mobile-screen-button fa-lg"></i> Audio Technica AT875R Microphone</p>
+            <p><i class="fa-solid fa-microphone fa-lg"></i> Focusrite Scarlette 3rd Gen Interface</p>
+            <p><i class="fa-solid fa-laptop fa-sm"></i> Mac Air Sequoia M2</p>
+            <p><i class="fa-solid fa-headphones fa-sm"></i> Audio Technica ATH-M40x Headphones</p>
+            <p><i class="fa-solid fa-ear-listen fa-sm"></i> Audacity</p>
+        </div>
+        <img src="./assets/images/TechSpecs1.png" alt="">
+    </section>
+
+    <footer>
+        <div class="leftFooter">
+            <h1 data-key="contact">Contact</h1>
+            <p>Email: Richard@RichardCrackerVC.com</p>
+            <a href=""><i class="fa-brands fa-facebook fa-2x footericon"></i></a>
+            <a href=""><i class="fa-brands fa-twitter fa-2x footericon"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin fa-2x footericon"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-2x footericon"></i></a>
+        </div>
+        <div class="rightFooter">
+            <h1 data-key="schedule">Schedule Call With Rich</h1>
+            <button id="bookAppointmentBtn">Book Appoinment</button>
+        </div>
+    </footer>
 
 
-  <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

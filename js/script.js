@@ -41,42 +41,19 @@ toggleLangButton.addEventListener('click', () => {
     isEnglish = !isEnglish; // Flip the language state
 });
 
-////////////Appointment Form : 
+////////////MAKING Meeting Scheduler : 
 
-// Show the form when the button is clicked
-document.getElementById('appointment-btn').addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent default link behavior
-    const form = document.getElementById('appointment-form');
-    form.style.display = 'flex'; // Show the form
+
+const modal = document.getElementById('scheduleModal');
+const openModalLink = document.querySelector('a[data-key="schedule"]');
+const bookAppointmentBtn = document.getElementById('bookAppointmentBtn');
+
+// Open modal when either the "Schedule a Call" link or "Book Appointment" button is clicked
+openModalLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default link behavior
+    modal.style.display = 'block';
 });
 
-// Hide the form when the "Cancel" button is clicked
-document.getElementById('close-btn').addEventListener('click', () => {
-    const form = document.getElementById('appointment-form');
-    form.style.display = 'none'; // Hide the form
+bookAppointmentBtn.addEventListener('click', function () {
+    modal.style.display = 'block';
 });
-
-// Handle form submission
-document.getElementById('appointment-popup').addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent default form submission
-
-    // Capture form inputs
-    const name = document.getElementById('name').value;
-    const contact = document.getElementById('contact').value;
-    const email = document.getElementById('email').value;
-    const date = document.getElementById('date').value;
-
-    // Save data into variables
-    console.log('Name:', name);
-    console.log('Contact:', contact);
-    console.log('Email:', email);
-    console.log('Date:', date);
-
-    // Display a confirmation message (optional)
-    alert('Appointment Booked!');
-
-    // Hide the form after submission
-    document.getElementById('appointment-form').style.display = 'none';
-});
-
-  
