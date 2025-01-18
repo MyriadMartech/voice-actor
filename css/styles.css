@@ -46,6 +46,56 @@ nav {
     margin-bottom: 5rem;
 }
 
+/* THE AUDIO CONTAINER */
+
+
+.audio-player-container {
+    width: 500px;
+    background-color: #e9d8d5;
+    /* Soft background color */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin: auto;
+    /* Center horizontally within a container */
+
+    position: relative;
+    margin-top: -10%;
+    margin-bottom: 5rem;
+    /* bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.title {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    /* Darker text color for good contrast */
+}
+
+audio {
+    width: 100%;
+    border-radius: 8px;
+    height: 30px;
+}
+
+.track-info {
+    margin-top: 5px;
+}
+
+.track-title {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #333;
+}
+
+/* THE AUDIO CONTAINER */
+
 .devider {
     background: rgb(186, 202, 218);
     padding: 10px 0;
@@ -277,7 +327,11 @@ footer {
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 1900px) {
-
+/* 
+    .audio-player-container {
+        width: 400px;    
+        bottom: 5rem;
+    } */
 
     .aboutRich,
     .videos,
@@ -296,7 +350,7 @@ footer {
 
     .aboutRichR p {
         text-align: justify;
-        font-size: 15px;
+        /* font-size: 15px; */
         line-height: 20px;
     }
 
@@ -308,6 +362,11 @@ footer {
 
 @media (max-width: 1680px) {
 
+    .audio-player-container {
+        width: 400px;    
+        margin-top: -10%;
+        margin-bottom: 3rem;
+    }
 
     .aboutRich {
         flex-direction: column;
@@ -327,14 +386,7 @@ footer {
 }
 
 @media (max-width: 1400px) {
-    /* .videocontainer {
-        display: grid; 
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: auto auto; 
-        row-gap: 3rem;
-        justify-content: center;
-        align-items: center;
-    } */
+
 
     #video2 {
         display: none;
@@ -383,14 +435,35 @@ footer {
 
 @media (max-width: 992px) {
 
-    nav{
+    .title {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .audio-player-container {
+        width: 350px;    
+        position: relative;
+        margin-top: -10%;
+        margin-bottom: 3rem;
+        padding: 10px;
+    }
+
+    .track-title {
+        font-size: 12px;
+    }
+    .aboutRichR p {
+        font-size: 15px;
+    }
+
+    nav {
         justify-content: center;
         align-items: center;
     }
+
     .navsides {
         justify-content: center;
         align-items: center;
     }
+
     .dltvideo {
         display: none;
     }
@@ -454,6 +527,26 @@ footer {
 
     .rightNav img {
         margin: 10px auto;
+    }
+
+    .banner img{
+        min-width: 350px;
+    }
+
+    .audio-player-container {
+        width: 280px;    
+        position: relative;
+        margin-top: -10%;
+        margin-bottom: 1rem;
+        padding: 10px;
+    }
+
+    audio {
+        padding: 1px;
+    }
+
+    .track-info {
+        margin-top: 0px;
     }
 
     .clientsImages img {

@@ -38,3 +38,7 @@ toggleLangButton.addEventListener('click', () => {
 
     isEnglish = !isEnglish; // Flip the language state
 });
+
+////////////MAKING TESTIMONIAL SCROLL : 
+
+  
