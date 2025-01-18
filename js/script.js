@@ -41,6 +41,42 @@ toggleLangButton.addEventListener('click', () => {
     isEnglish = !isEnglish; // Flip the language state
 });
 
-////////////MAKING TESTIMONIAL SCROLL : 
+////////////Appointment Form : 
+
+// Show the form when the button is clicked
+document.getElementById('appointment-btn').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    const form = document.getElementById('appointment-form');
+    form.style.display = 'flex'; // Show the form
+});
+
+// Hide the form when the "Cancel" button is clicked
+document.getElementById('close-btn').addEventListener('click', () => {
+    const form = document.getElementById('appointment-form');
+    form.style.display = 'none'; // Hide the form
+});
+
+// Handle form submission
+document.getElementById('appointment-popup').addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent default form submission
+
+    // Capture form inputs
+    const name = document.getElementById('name').value;
+    const contact = document.getElementById('contact').value;
+    const email = document.getElementById('email').value;
+    const date = document.getElementById('date').value;
+
+    // Save data into variables
+    console.log('Name:', name);
+    console.log('Contact:', contact);
+    console.log('Email:', email);
+    console.log('Date:', date);
+
+    // Display a confirmation message (optional)
+    alert('Appointment Booked!');
+
+    // Hide the form after submission
+    document.getElementById('appointment-form').style.display = 'none';
+});
 
   

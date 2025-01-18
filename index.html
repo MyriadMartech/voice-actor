@@ -17,11 +17,32 @@
         </ul>
 
         <ul class="rightNav navsides">
-            <li><a href="" data-key="schedule">Schedule A Call With Richard</a></li>
+            <li><a href="" data-key="schedule" id="appointment-btn">Schedule A Call With Richard</a></li>
 
             <img id="toggle-lang" src="assets/images/japanflag.png" alt="" width="20px">
         </ul>
     </nav>
+
+
+    <div id="appointment-form">
+        <form id="appointment-popup">
+            <h2>Book an Appointment</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Date & Time:</label>
+            <input type="datetime-local" id="date" name="date" required>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="close-btn">Cancel</button>
+        </form>
+    </div>
 
     <section class="banner">
         <img width="70%" src="assets/images/RichardCaraker_logo_large.jpg" alt="BannerImage">
@@ -212,7 +233,7 @@
     </div>
     <div class="rightFooter">
         <h1 data-key="schedule">Schedule Call With Rich</h1>
-        <button>Book Appoinment</button>
+        <button id="appointment-btn">Book Appoinment</button>
     </div>
   </footer>
 

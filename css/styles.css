@@ -120,6 +120,90 @@ audio {
     height: max-content;
 }
 
+
+/* APPOINTMENT FORM */
+#appointment-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Form */
+#appointment-popup {
+    background: white;
+    padding: 30px 20px;
+    /* Improved padding for inner spacing */
+    border-radius: 10px;
+    width: 500px;
+    /* Fixed width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Add spacing between form elements */
+}
+
+/* Form Inputs */
+#appointment-popup input,
+#appointment-popup button {
+    width: 95%;
+    /* Inputs will stretch to fill form width */
+    padding: 10px;
+    /* Adjust padding inside inputs */
+    margin-top: 5px;
+    /* Slight margin for cleaner spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#appointment-popup button {
+    margin: 2.5px auto;
+}
+
+/* Input Focus Effect */
+#appointment-popup input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit and Cancel Buttons */
+#appointment-popup button[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#appointment-popup button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+#appointment-popup button[type="button"] {
+    background: #ccc;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#appointment-popup button[type="button"]:hover {
+    background: #aaa;
+}
+
+/* APPOINTMENT FORM END*/
+
+
+
 .aboutRichR p {
     color: rgb(0, 0, 0);
     font-family: Inter;
@@ -328,7 +412,7 @@ footer {
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 1900px) {
-/* 
+    /* 
     .audio-player-container {
         width: 400px;    
         bottom: 5rem;
@@ -364,7 +448,7 @@ footer {
 @media (max-width: 1680px) {
 
     .audio-player-container {
-        width: 400px;    
+        width: 400px;
         margin-top: -10%;
         margin-bottom: 3rem;
     }
@@ -440,8 +524,19 @@ footer {
         font-size: 15px;
         margin-bottom: 5px;
     }
+
+    #appointment-popup {
+        width: 90%; /* Reduce width for smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    #appointment-popup input,
+    #appointment-popup button {
+        font-size: 14px; /* Smaller font size for inputs and buttons */
+    }
+
     .audio-player-container {
-        width: 350px;    
+        width: 350px;
         position: relative;
         margin-top: -10%;
         margin-bottom: 3rem;
@@ -451,6 +546,7 @@ footer {
     .track-title {
         font-size: 12px;
     }
+
     .aboutRichR p {
         font-size: 15px;
     }
@@ -529,14 +625,30 @@ footer {
     .rightNav img {
         margin: 10px auto;
     }
+    #appointment-popup {
+        width: 95%; /* Maximize width on very small screens */
+        padding: 15px;
+    }
 
-    .banner img{
+    #appointment-popup h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    #appointment-popup input,
+    #appointment-popup button {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    #appointment-popup button {
+        padding: 8px 10px; /* Adjust button padding */
+    }
+    .banner img {
         min-width: 350px;
         margin-bottom: 3.5rem;
     }
 
     .audio-player-container {
-        width: 280px;    
+        width: 280px;
         position: relative;
         margin-top: -10%;
         margin-bottom: 1rem;
