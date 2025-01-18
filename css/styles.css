@@ -23,6 +23,7 @@ nav {
 .rightNav img {
     margin: 10px;
     width: 50px;
+    height: 35px;
     cursor: pointer;
 }
 
