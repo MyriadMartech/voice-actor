@@ -41,6 +41,19 @@ toggleLangButton.addEventListener('click', () => {
     isEnglish = !isEnglish; // Flip the language state
 });
 
-////////////MAKING TESTIMONIAL SCROLL : 
+////////////MAKING Meeting Scheduler : 
 
-  
+
+const modal = document.getElementById('scheduleModal');
+const openModalLink = document.querySelector('a[data-key="schedule"]');
+const bookAppointmentBtn = document.getElementById('bookAppointmentBtn');
+
+// Open modal when either the "Schedule a Call" link or "Book Appointment" button is clicked
+openModalLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default link behavior
+    modal.style.display = 'block';
+});
+
+bookAppointmentBtn.addEventListener('click', function () {
+    modal.style.display = 'block';
+});

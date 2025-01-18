@@ -27,6 +27,18 @@ nav {
     cursor: pointer;
 }
 
+
+        /* MEETING SCHEDULER */
+.modal{
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 100%;
+}
+        /* MEETING SCHEDULER */
+
 .navsides li {
     list-style: none;
     background-color: #052357;
@@ -46,6 +58,18 @@ nav {
     margin-top: 3rem;
     margin-bottom: 5rem;
 }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
 
 /* THE AUDIO CONTAINER */
 
@@ -328,7 +352,7 @@ footer {
 /* RESPONSIVE DESIGN */
 
 @media (max-width: 1900px) {
-/* 
+    /* 
     .audio-player-container {
         width: 400px;    
         bottom: 5rem;
@@ -364,7 +388,7 @@ footer {
 @media (max-width: 1680px) {
 
     .audio-player-container {
-        width: 400px;    
+        width: 400px;
         margin-top: -10%;
         margin-bottom: 3rem;
     }
@@ -440,8 +464,9 @@ footer {
         font-size: 15px;
         margin-bottom: 5px;
     }
+
     .audio-player-container {
-        width: 350px;    
+        width: 350px;
         position: relative;
         margin-top: -10%;
         margin-bottom: 3rem;
@@ -451,6 +476,7 @@ footer {
     .track-title {
         font-size: 12px;
     }
+
     .aboutRichR p {
         font-size: 15px;
     }
@@ -530,13 +556,13 @@ footer {
         margin: 10px auto;
     }
 
-    .banner img{
+    .banner img {
         min-width: 350px;
         margin-bottom: 3.5rem;
     }
 
     .audio-player-container {
-        width: 280px;    
+        width: 280px;
         position: relative;
         margin-top: -10%;
         margin-bottom: 1rem;
