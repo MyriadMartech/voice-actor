@@ -20,6 +20,11 @@ nav {
     flex-wrap: wrap;
 }
 
+.rightNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .rightNav img {
     margin: 10px;
     width: 50px;
@@ -636,9 +641,9 @@ footer {
         text-align: center;
     }
 
-    .rightNav img {
+    /* .rightNav img {
         margin: 10px auto;
-    }
+    } */
 
     .banner img {
         min-width: 350px;
