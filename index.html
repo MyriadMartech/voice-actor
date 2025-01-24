@@ -13,14 +13,15 @@
     <nav>
         <ul class="leftNav navsides">
             <li><a href="https://wa.me/819029189359"><i class="fas fa-phone"></i> 81-90-2918-9359</a></li>
-            <li><a href="mailto:ichard@RichardCrackerVA.com"> <i class="fa-solid fa-envelope"></i>
-                    richard@richardcrackerva.com</a></li>
+            <li><a href="mailto:r.caraker@richardcarakervo.com"> <i class="fa-solid fa-envelope"></i>
+                r.caraker@richardcarakervo.com</a></li>
         </ul>
 
         <ul class="rightNav navsides">
-            <li><a href="" id="scheduleLink" data-key="schedule">Schedule A Call With Richard</a></li>
-
-            <img id="toggle-lang" src="assets/images/japanflag.png" alt="" width="20px"> <span data-key="lang">EN</span>
+            <li id="scheduleLink"><a href=""  data-key="schedule">Schedule A Call With Richard</a></li>
+            <div class="flagcontainer" style="display: flex; align-items: center; justify-content: center;">
+                <img id="toggle-lang" src="assets/images/japanflag.png" alt="" width="20px"> <span data-key="lang">JP</span>
+            </div>
         </ul>
     </nav>
 
@@ -35,21 +36,18 @@
 <!-- MEETING SCHEDULER POPUP -->
 
 
-
-      
-
     <section class="banner">
-        <img width="70%" src="assets/images/RichardCaraker_logo_large.jpg" alt="BannerImage">
+            <img width="70%" src="assets/images/RichardCaraker_logo_large.png" alt="BannerImage">
     </section>
 
     <div class="audio-player-container">
-        <h2 data-key="demoAudio" class="title">Demo Recorded From My Home Studio</h2>
+        <h2 data-key="demoAudio" class="title">COMMERCIAL DEMO</h2>
         <audio controls>
             <source src="./assets/audios/voice-demo.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <div class="track-info">
-            <span class="track-title">RC Commercial-2</span>
+            <span class="track-title">RECORDED FROM MY HOME STUDIO</span>
         </div>
     </div>
 
@@ -59,6 +57,7 @@
 
     <section class="aboutRich">
         <img src="./assets/images/profilephoto.jpeg" alt="">
+        <!-- <img src="./assets/images/profilephoto_correction.jpeg" alt=""> -->
         <div class="aboutRichR">
             <p data-key="aboutRichPara1">Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His
                 transpacific mindset makes
@@ -77,24 +76,26 @@
                 commitment to bringing his clients’visions to life.</p>
         </div>
     </section>
-
-    <div class="devider">
+<!-- 
+    <div class="devider our-clients">
         <h1>Our Clients</h1>
-    </div>
+    </div> -->
 
     <section class="clients">
         <img src="./assets/images/Clients2.png" alt="">
         <div class="clientsImages">
-            <img src="./assets/images/mext.png" alt="">
-            <img src="./assets/images/cyberoyne.png" alt="">
+            <img src="./assets/images/mext2.png" alt="">
+            <img src="./assets/images/cyberoyne2.png" alt="">
             <img src="./assets/images/waseda.png" alt="">
             <!-- <br> -->
             <img src="./assets/images/qgames.png" alt="">
-            <img src="./assets/images/wovenplanet.jpg" alt="">
-            <img src="./assets/images/JSPS.jpg" alt="">
+            <img src="./assets/images/wovenplanet.png" alt="">
+            <img src="./assets/images/JSPS.png" alt="">
         </div>
     </section>
 
+<!-- TESTIMONIAL AND VIDEO SECTION WILL BE AVAILABLE ON A LATER DATE -->
+<!--  
     <div class="devider">
         <h1>Testimonials</h1>
     </div>
@@ -215,6 +216,8 @@
         <i class="fa-solid fa-circle-arrow-left fa-3x icon"></i>
         <i class="fa-solid fa-circle-arrow-right fa-3x icon"></i>
     </div>
+
+    -->
     <div class="devider">
         <h1>Tech Specs</h1>
     </div>
@@ -224,8 +227,8 @@
     <section class="tech">
         <div class="lefttech">
 
-            <p><i class="fa-solid fa-mobile-screen-button fa-lg"></i> Audio Technica AT875R Microphone</p>
-            <p><i class="fa-solid fa-microphone fa-lg"></i> Focusrite Scarlette 3rd Gen Interface</p>
+            <p><i class="fa-solid fa-microphone fa-lg"></i> Audio Technica AT875R Microphone</p>
+            <p><i class="fa-solid fa-wave-square fa-lg"></i> Focusrite Scarlette 3rd Gen Interface</p>
             <p><i class="fa-solid fa-laptop fa-sm"></i> Mac Air Sequoia M2</p>
             <p><i class="fa-solid fa-headphones fa-sm"></i> Audio Technica ATH-M40x Headphones</p>
             <p><i class="fa-solid fa-ear-listen fa-sm"></i> Audacity</p>
@@ -236,16 +239,26 @@
     <footer>
         <div class="leftFooter">
             <h1 data-key="contact">Contact</h1>
-            <p>Email: richard@richardcrackervc.com</p>
-            <a href=""><i class="fa-brands fa-facebook fa-2x footericon"></i></a>
-            <a href=""><i class="fa-brands fa-twitter fa-2x footericon"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin fa-2x footericon"></i></a>
-            <a href=""><i class="fa-brands fa-github fa-2x footericon"></i></a>
+            <p>Email: r.caraker@richardcarakervo.com</p>
+            <a href=""><img src="./assets/images/linkedin.svg" alt=""></a>
+            <a href=""><img src="./assets/images/facebook.svg" alt=""></a>
+            <a href=""><img src="./assets/images/bluesky.svg" alt=""></a>
+
         </div>
         <div class="rightFooter">
             <h1 data-key="schedule">Schedule Call With Rich</h1>
             <button id="bookAppointmentBtn">Book Appoinment</button>
-        </div>
+
+            <div class="myriadContainer">
+                <p>Website designed and developed by&nbsp
+                    <a href="https://www.myriadmartech.com/">Myriad
+                </p>
+                        <img id="myriad" src="./assets/images/myriadmartech.png" alt="">
+                    </a>
+                    
+                 
+            </div>
+            </div>
     </footer>
 
 
