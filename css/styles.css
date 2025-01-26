@@ -31,22 +31,32 @@ nav {
     justify-content: center;
 }
 
+#scheduleLink a{
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+/*
 #scheduleLink {
-    background-color: #ff6f3c; /* A warm, contrasting color for emphasis */
-    color: #ffffff; /* Text color */
-    font-weight: bold; /* Make the text bolder */
-    border-radius: 15px; /* Slightly larger rounding for distinction */
-    padding: 10px 20px; /* Larger padding for a more prominent button */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+    background-color: #ff6f3c;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 #scheduleLink:hover {
-    transform: translateY(-2px); /* Slight lift on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
-    background-color: #ff4e1a; /* Slightly darker orange on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    background-color: #ff4e1a;
 }
+ */
 
 .rightNav img {
     margin: 10px;
@@ -444,7 +454,7 @@ audio {
 }
 
 #myriad{
-    width: 60px;
+    width: 70px;
     height:auto;
     margin-left: 1rem;
 }
@@ -719,7 +729,7 @@ footer {
     }
 
     nav>ul>li {
-        width: 270px;
+        width: 295px;
         text-align: center;
     }
 
@@ -810,7 +820,7 @@ footer {
     }
 
     .myriadContainer p, .myriadContainer p span a{
-        font-size: 15px;
+        font-size: 20px;
     }
 
 }
