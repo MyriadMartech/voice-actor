@@ -8,20 +8,24 @@ const translations = {
         contact: "Contact",
         schedule: "Schedule a call with Rich",
         aboutRichdevider: "RICHARD OFFERS A RELAXED GENTLE TENOR WITH EXCELLENT WARM LOW-END SUPPORT.",
-        aboutRichPara1: "Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His transpacific mindset makes Rich a sought- after voice for Japanese public service announcements, university projects, corporate           narrations, web presentations, and e- learning tutorials.",
+        aboutRichPara1: "Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His transpacific mindset makes Rich a sought-after voice for Japanese public service announcements, university projects, corporate narrations, web presentations, and e-learning tutorials.",
         aboutRichPara2: "Rich has lent his distinct voice to such prestigous projects as MEXT, Woven Industries, Waseda University, Cyberdyn Sytems, Q-Games and many more.",
-        aboutRichPara3: "Rich’s warm, relatable, and authentic tenor captivates listeners with a versitile performance style that effortlessly ranges from light-hearted charm to trusted authority. This unique ability to connect with listeners stems from Rich’s 30+ years as a university teacher and weekend saxophonist in jazz and rock bands across Tokyo. Rich approaches every project with creativity, expertise, and an unwavering commitment to bringing his clients’visions to life.",
-        demoAudio: "Demo Recorded From My Home Studio",
+        aboutRichPara3: "Rich's warm, relatable, and authentic tenor captivates listeners with a versitile performance style that effortlessly ranges from light-hearted charm to trusted authority. This unique ability to connect with listeners stems from Rich's 30+ years as a university teacher and weekend saxophonist in jazz and rock bands across Tokyo.",
+        aboutRichPara4: "Rich approaches every project with creativity, expertise, and an unwavering commitment to bringing his client's visions to life.",
+        demoAudio: "COMMERCIAL DEMO",
+        demoAudio2: "Recorded From My Home Studio",
         lang: "JP",
   },
 japanese: {
     contact: "接触",
     schedule: "リッチとの通話をスケジュールする",
     aboutRichdevider: "リチャードは、リラックスした穏やかなテノールと優れた温かみのある低音を提供します。",
-    aboutRichPara1: "リチャードは、サンフランシスコと深いつながりを持ち、東京を拠点に活動している声優です。太平洋を越えた広い視野に基づく価値観から、日本の公共サービスに関するアナウンス、大学教育における様々なプロジェクト、企業向けナレーション、オンライン・プレゼンテーション、eラーニング・チュートリアル等で求められる音声を手掛けてきました。",
-    aboutRichPara2: "リチャードは、文部科学省(MEXT)、ウーブン・バイ・トヨタ、早稲田大学、CYBERDYNE株式会社、Q-Gamesといった一流企業・機関にも声を提供してきました。",
-    aboutRichPara3: "リチャードの優しくなおかつ明瞭なテノールボイスは、愛嬌のある軽快さから荘厳な権威まで幅広くこなす柔軟な技巧により、聴き手を魅了しています。彼の聴く人と心を通わせる卓越したその技術は、30年以上にわたる大学での教育者としての経歴のみならず、週末に東京のジャズ・ロックバンドでサックス奏者として活動してきた経験からも培われました。リチャードは、すべてのプロジェクトに対して、創造性や専門知識を駆使し、クライアントの構想（ヴィジョン）を具現化するために全力を注いでいます。",
-    demoAudio: "自宅のスタジオで録音したデモ",
+    aboutRichPara1: "リチャードは、サンフランシスコと深いつながりを持ちながら、東京を拠点に活動するボイスオーバー/ナレーターです。太平洋を越えた広い視野と価値観を活かし、日本の公共サービス向けのアナウンスや大学教育のさまざまなプロジェクト、企業向けナレーション、オンラインプレゼンテーション、eラーニングチュートリアルなど、幅広い分野で音声を提供してきました。",
+    aboutRichPara2: "これまでに、文部科学省（MEXT）、ウーブン・バイ・トヨタ、早稲田大学、CYBERDYNE株式会社、Q-Gamesなど、国内外の一流企業や機関に声を提供してきた実績があります。",
+    aboutRichPara3: "リチャードの優しく明瞭なテノールボイスは、親しみやすく軽快なトーンから荘厳で威厳のある表現まで自在に使い分けることができ、聴く人々を魅了します。この卓越したスキルは、30年以上にわたる大学教育者としてのキャリアに加え、週末に東京のジャズ・ロックバンドでサックス奏者として活動してきた経験によって培われました。",
+    aboutRichPara4: "リチャードは、どのプロジェクトにも創造性と専門性を最大限に注ぎ込み、クライアントのビジョンを形にするため全力で取り組んでいます。",
+    demoAudio: "商用デモ",
+    demoAudio2: "自宅のスタジオから録音",
     lang: "EN",
   }
 };
@@ -40,11 +44,9 @@ toggleLangButton.addEventListener('click', () => {
         element.textContent = translations[currentLang][key]; // Set the translated text
     });
 
-    toggleLangButton.src = isEnglish
-        ? 'assets/images/en-flag.png'
-        : 'assets/images/japanflag.png';
-        // ? 'assets/images/japanflag.png'
-        // : 'assets/images/en-flag.png';
+    // toggleLangButton.src = isEnglish
+    //     ? 'assets/images/en-flag.png'
+    //     : 'assets/images/japanflag.png';
 
     isEnglish = !isEnglish; // Flip the language state
 });
