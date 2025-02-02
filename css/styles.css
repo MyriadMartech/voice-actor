@@ -41,6 +41,7 @@ nav {
     font-weight: bolder;
     border-radius: 15px;
     /* padding: 10px 20px; */
+    line-height: 21px;
     font-size: 18px;
 }
 
@@ -158,6 +159,7 @@ nav {
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
+    line-height: 23px;
     /* Darker text color for good contrast */
 }
 
@@ -190,6 +192,7 @@ audio {
     font-weight: 500;
     text-align: center;
     padding: 0 2rem;
+    line-height: 34px;
 }
 
 .aboutRich {
@@ -309,8 +312,7 @@ audio {
 }
 
 .clients>img {
-
-    width: 100%;
+    /* width: 100%; */
 }
 
 .clientsImages {
@@ -615,7 +617,7 @@ footer {
 
 @media (max-width: 1200px) {
 
-    .clients>img,
+    /* .clients>img, */
     .tech>img {
         width: 100%;
     }
@@ -650,6 +652,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
 
     .title {
         font-size: 15px;
@@ -690,8 +693,12 @@ footer {
         display: none;
     }
 
-    .clients {
-        padding: 5rem 7rem;
+    /* .clients {
+        padding: 5rem 2rem;
+    } */
+
+    .clients>img{
+        width: 100%;
     }
 
     .clientsImages {
@@ -707,6 +714,7 @@ footer {
         padding: 3rem 2rem;
     }
 
+    .clients,
     .tech {
         padding: 5rem 2rem;
     }
@@ -799,6 +807,9 @@ footer {
     .clients {
         padding: 1rem 2rem;
     }
+
+
+
 
     .tech {
         padding: 4rem 1.5rem;
