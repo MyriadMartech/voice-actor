@@ -9,7 +9,8 @@
 
 nav {
     /* background-color: #BACADA; */
-    background-color: #191970;
+    /* background-color: #191970; */
+    background-color: #042256;
     position: sticky;
     top: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -31,11 +32,15 @@ nav {
     justify-content: center;
 }
 
+/* #scheduleLink{
+    padding: 4px 15px;
+} */
+
 #scheduleLink a{
     color: #ffffff;
     font-weight: bolder;
     border-radius: 15px;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     font-size: 18px;
 }
 
@@ -85,6 +90,9 @@ nav {
     padding: 8px 15px;
     margin: 10px;
     transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navsides li:hover {
@@ -106,7 +114,7 @@ nav {
 .banner img {
     display: block;
     margin: 0 auto;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     margin-bottom: 2rem;
 }
 
@@ -186,7 +194,7 @@ audio {
 
 .aboutRich {
     padding: 5rem 15rem;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     display: flex;
     gap: 2rem;
 }
@@ -293,8 +301,8 @@ audio {
 }
 
 .clients {
-    padding: 8rem 15rem;
-    padding-top: 3rem;
+    padding: 3rem 15rem;
+    /* padding-top: 3rem; */
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -459,10 +467,12 @@ audio {
     margin-left: 1rem;
 }
 
-/* .tech img {
-    min-width: 450px;   
-    height: auto; 
-} */
+.tech>img {
+    /* min-width: 450px;   
+    height: auto;  */
+    max-width: 755px;
+    width: 100%;
+}
 
 footer {
     background: rgb(186, 202, 218);
@@ -724,13 +734,14 @@ footer {
 @media (max-width: 600px) {
 
     nav {
+        position: static;
         padding: 0;
         margin: 0 auto;
         position: static;
     }
 
     nav>ul>li {
-        width: 295px;
+        width: 330px;
         text-align: center;
     }
 
