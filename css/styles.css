@@ -180,6 +180,24 @@ audio {
     color: #333;
 }
 
+.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #10ace9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
 /* THE AUDIO CONTAINER */
 
 .devider {
@@ -668,6 +686,10 @@ footer {
     }
 
     .track-title {
+        font-size: 12px;
+    }
+
+    .download-button{
         font-size: 12px;
     }
 
