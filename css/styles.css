@@ -857,7 +857,7 @@ footer {
     }
 
     footer {
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .leftFooter p {
@@ -866,6 +866,10 @@ footer {
 
     .rightFooter h1 {
         font-size: 20px;
+    }
+    .myriadContainer{
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .myriadContainer p, .myriadContainer p span a{

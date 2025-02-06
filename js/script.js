@@ -11,7 +11,7 @@ const translations = {
         aboutRichPara1: "Rich is a voice over actor based in Tokyo with deep ties to San Francisco. His transpacific mindset makes Rich a sought-after voice for Japanese public service announcements, university projects, corporate narrations, web presentations, and e-learning tutorials.",
         aboutRichPara2: "Rich has lent his distinct voice to such prestigous projects as MEXT, Woven Industries, Waseda University, Cyberdyn Sytems, Q-Games and many more.",
         aboutRichPara3: "Rich's warm, relatable, and authentic tenor captivates listeners with a versitile performance style that effortlessly ranges from light-hearted charm to trusted authority. This unique ability to connect with listeners stems from Rich's 30+ years as a university teacher and weekend saxophonist in jazz and rock bands across Tokyo.",
-        aboutRichPara4: "Rich approaches every project with creativity, expertise, and an unwavering commitment to bringing his client's visions to life.",
+        aboutRichPara4: "Rich approaches every project with creativity, expertise, and an unwavering commitment to bringing his clients’ visions to life.",
         demoAudio: "COMMERCIAL DEMO",
         demoAudio2: "Recorded From My Home Studio",
         lang: "JP",
